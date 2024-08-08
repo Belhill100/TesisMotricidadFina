@@ -63,6 +63,7 @@
     <Compile Include="Assets\MRTemplateAssets\Scripts\XRPokeFollowAffordanceFill.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\FadePlaneMaterial.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\BooleanToggleVisualsController.cs" />
+    <Compile Include="Assets\ChangeScenario.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\GoalManager.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\GazeTooltips.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\ZoneScale.cs" />
