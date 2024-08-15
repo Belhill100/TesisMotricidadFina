@@ -1,0 +1,4 @@
+repository "TesisMotricidadFina@Sefirot50@cloud"
+  path "/"
+    br "/main"
+    co "/main"

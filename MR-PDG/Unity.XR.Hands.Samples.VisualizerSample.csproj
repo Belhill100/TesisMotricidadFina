@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{9C7803AA-BF7A-9F7D-1983-D4EB419E476C}</ProjectGuid>
+    <ProjectGuid>{637B687C-DAF8-1346-32CF-AC2BBA8483A6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.XR.Hands.Samples.VisualizerSample</AssemblyName>

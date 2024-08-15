@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{24CB4F38-04A1-271B-6D1B-6EE0A282C85D}</ProjectGuid>
+    <ProjectGuid>{4294F1D2-2E2A-CBAF-BA99-936F36862DE0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.XR.Interaction.Toolkit.Samples.Hands.Editor</AssemblyName>
