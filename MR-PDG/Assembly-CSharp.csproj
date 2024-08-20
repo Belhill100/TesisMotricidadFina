@@ -71,7 +71,6 @@
     <Compile Include="Assets\MRTemplateAssets\Scripts\LaunchProjectile.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\PositionAtStart.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\FadeMaterial.cs" />
-    <Compile Include="Assets\Rabbits\Demo\Scripts\AnimatorParamatersChange.cs" />
     <Compile Include="Assets\FantasyEnvironments\Environments\Town\Scripts\Door.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\TurnToFace.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\VideoTimeScrubControl.cs" />
