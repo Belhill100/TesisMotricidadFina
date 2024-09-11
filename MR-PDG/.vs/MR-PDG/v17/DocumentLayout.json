@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\PDG\\TesisMotricidadFina\\MR-PDG\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{47D66D55-C371-F83C-7BD9-19A28A0CAE21}|Assembly-CSharp.csproj|c:\\pdg\\tesismotricidadfina\\mr-pdg\\assets\\changescenario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47D66D55-C371-F83C-7BD9-19A28A0CAE21}|Assembly-CSharp.csproj|solutionrelative:assets\\changescenario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\PDG\\TesisMotricidadFina\\MR-PDG\\Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\SimpleLit.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\SimpleLit.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\PDG\\TesisMotricidadFina\\MR-PDG\\Library\\PackageCache\\org.mixedrealitytoolkit.spatialmanipulation@e428e3e6823c\\ObjectManipulator\\ObjectManipulator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\org.mixedrealitytoolkit.spatialmanipulation@e428e3e6823c\\ObjectManipulator\\ObjectManipulator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\PDG\\TesisMotricidadFina\\MR-PDG\\Library\\PackageCache\\org.mixedrealitytoolkit.core@91839deb5e8c\\Editor\\Utilities\\ReserializeAssetsUtility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\org.mixedrealitytoolkit.core@91839deb5e8c\\Editor\\Utilities\\ReserializeAssetsUtility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{47D66D55-C371-F83C-7BD9-19A28A0CAE21}|Assembly-CSharp.csproj|c:\\pdg\\tesismotricidadfina\\mr-pdg\\assets\\scripts\\cubestacker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47D66D55-C371-F83C-7BD9-19A28A0CAE21}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cubestacker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,52 +19,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ChangeScenario.cs",
-              "DocumentMoniker": "C:\\PDG\\TesisMotricidadFina\\MR-PDG\\Assets\\ChangeScenario.cs",
-              "RelativeDocumentMoniker": "Assets\\ChangeScenario.cs",
-              "ToolTip": "C:\\PDG\\TesisMotricidadFina\\MR-PDG\\Assets\\ChangeScenario.cs",
-              "RelativeToolTip": "Assets\\ChangeScenario.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAowB0AAAAvAAAA",
+              "Title": "CubeStacker.cs",
+              "DocumentMoniker": "C:\\PDG\\TesisMotricidadFina\\MR-PDG\\Assets\\Scripts\\CubeStacker.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CubeStacker.cs",
+              "ToolTip": "C:\\PDG\\TesisMotricidadFina\\MR-PDG\\Assets\\Scripts\\CubeStacker.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CubeStacker.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T21:45:01.926Z",
+              "WhenOpened": "2024-09-09T22:45:57.304Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SimpleLit.shader",
-              "DocumentMoniker": "C:\\PDG\\TesisMotricidadFina\\MR-PDG\\Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\SimpleLit.shader",
-              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\SimpleLit.shader",
-              "ToolTip": "C:\\PDG\\TesisMotricidadFina\\MR-PDG\\Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\SimpleLit.shader",
-              "RelativeToolTip": "Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\SimpleLit.shader",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2024-08-20T21:11:50.928Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ObjectManipulator.cs",
-              "DocumentMoniker": "C:\\PDG\\TesisMotricidadFina\\MR-PDG\\Library\\PackageCache\\org.mixedrealitytoolkit.spatialmanipulation@e428e3e6823c\\ObjectManipulator\\ObjectManipulator.cs",
-              "RelativeDocumentMoniker": "Library\\PackageCache\\org.mixedrealitytoolkit.spatialmanipulation@e428e3e6823c\\ObjectManipulator\\ObjectManipulator.cs",
-              "ToolTip": "C:\\PDG\\TesisMotricidadFina\\MR-PDG\\Library\\PackageCache\\org.mixedrealitytoolkit.spatialmanipulation@e428e3e6823c\\ObjectManipulator\\ObjectManipulator.cs",
-              "RelativeToolTip": "Library\\PackageCache\\org.mixedrealitytoolkit.spatialmanipulation@e428e3e6823c\\ObjectManipulator\\ObjectManipulator.cs",
-              "ViewState": "AQIAAOsDAAAAAAAAAAAewPsDAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-18T02:37:37.636Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ReserializeAssetsUtility.cs",
-              "DocumentMoniker": "C:\\PDG\\TesisMotricidadFina\\MR-PDG\\Library\\PackageCache\\org.mixedrealitytoolkit.core@91839deb5e8c\\Editor\\Utilities\\ReserializeAssetsUtility.cs",
-              "RelativeDocumentMoniker": "Library\\PackageCache\\org.mixedrealitytoolkit.core@91839deb5e8c\\Editor\\Utilities\\ReserializeAssetsUtility.cs",
-              "ToolTip": "C:\\PDG\\TesisMotricidadFina\\MR-PDG\\Library\\PackageCache\\org.mixedrealitytoolkit.core@91839deb5e8c\\Editor\\Utilities\\ReserializeAssetsUtility.cs",
-              "RelativeToolTip": "Library\\PackageCache\\org.mixedrealitytoolkit.core@91839deb5e8c\\Editor\\Utilities\\ReserializeAssetsUtility.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAuwDwAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-18T01:47:59.971Z"
             }
           ]
         }
