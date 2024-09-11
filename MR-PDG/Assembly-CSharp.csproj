@@ -60,20 +60,23 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.36f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\DrawingTool.cs" />
     <Compile Include="Assets\Scripts\CubeStacker.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\XRPokeFollowAffordanceFill.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\FadePlaneMaterial.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\BooleanToggleVisualsController.cs" />
-    <Compile Include="Assets\ChangeScenario.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\GoalManager.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\GazeTooltips.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\ZoneScale.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\PinchVizController.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\LaunchProjectile.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\PositionAtStart.cs" />
+    <Compile Include="Assets\Scripts\ChangeScenario.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\FadeMaterial.cs" />
+    <Compile Include="Assets\Scripts\CondorFollower.cs" />
     <Compile Include="Assets\FantasyEnvironments\Environments\Town\Scripts\Door.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\TurnToFace.cs" />
+    <Compile Include="Assets\Scripts\ButtonAction.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\VideoTimeScrubControl.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\VideoPlayerRenderTexture.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\PlaneTrackingModeVisualizer.cs" />

@@ -3,7 +3,19 @@
   "WorkspaceRootPath": "C:\\PDG\\TesisMotricidadFina\\MR-PDG\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{47D66D55-C371-F83C-7BD9-19A28A0CAE21}|Assembly-CSharp.csproj|c:\\pdg\\tesismotricidadfina\\mr-pdg\\assets\\scripts\\cubestacker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{47D66D55-C371-F83C-7BD9-19A28A0CAE21}|Assembly-CSharp.csproj|C:\\PDG\\TesisMotricidadFina\\MR-PDG\\assets\\scripts\\buttonaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47D66D55-C371-F83C-7BD9-19A28A0CAE21}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\buttonaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47D66D55-C371-F83C-7BD9-19A28A0CAE21}|Assembly-CSharp.csproj|c:\\pdg\\tesismotricidadfina\\mr-pdg\\assets\\scripts\\condorfollower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47D66D55-C371-F83C-7BD9-19A28A0CAE21}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\condorfollower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47D66D55-C371-F83C-7BD9-19A28A0CAE21}|Assembly-CSharp.csproj|C:\\PDG\\TesisMotricidadFina\\MR-PDG\\assets\\scripts\\drawingtool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47D66D55-C371-F83C-7BD9-19A28A0CAE21}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\drawingtool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47D66D55-C371-F83C-7BD9-19A28A0CAE21}|Assembly-CSharp.csproj|C:\\PDG\\TesisMotricidadFina\\MR-PDG\\assets\\scripts\\cubestacker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47D66D55-C371-F83C-7BD9-19A28A0CAE21}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cubestacker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -19,6 +31,44 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ButtonAction.cs",
+              "DocumentMoniker": "C:\\PDG\\TesisMotricidadFina\\MR-PDG\\Assets\\Scripts\\ButtonAction.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ButtonAction.cs",
+              "ToolTip": "C:\\PDG\\TesisMotricidadFina\\MR-PDG\\Assets\\Scripts\\ButtonAction.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ButtonAction.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T20:57:59.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CondorFollower.cs",
+              "DocumentMoniker": "C:\\PDG\\TesisMotricidadFina\\MR-PDG\\Assets\\Scripts\\CondorFollower.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CondorFollower.cs",
+              "ToolTip": "C:\\PDG\\TesisMotricidadFina\\MR-PDG\\Assets\\Scripts\\CondorFollower.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CondorFollower.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAQwB8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T20:57:00.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DrawingTool.cs",
+              "DocumentMoniker": "C:\\PDG\\TesisMotricidadFina\\MR-PDG\\Assets\\Scripts\\DrawingTool.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DrawingTool.cs",
+              "ToolTip": "C:\\PDG\\TesisMotricidadFina\\MR-PDG\\Assets\\Scripts\\DrawingTool.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DrawingTool.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwAEAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T20:10:04.243Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "CubeStacker.cs",
               "DocumentMoniker": "C:\\PDG\\TesisMotricidadFina\\MR-PDG\\Assets\\Scripts\\CubeStacker.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CubeStacker.cs",
@@ -26,8 +76,7 @@
               "RelativeToolTip": "Assets\\Scripts\\CubeStacker.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T22:45:57.304Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-09T22:45:57.304Z"
             }
           ]
         }
