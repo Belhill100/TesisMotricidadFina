@@ -17,7 +17,7 @@ public class DrawingTool : MonoBehaviour
     private Vector3 tipOffset = new Vector3(0, 0, -0.55f);
 
     // Distancia mínima entre puntos para registrar un nuevo trazo
-    public float minDistance = 0.05f;
+    public float minDistance = 0.025f;
 
     // Grosor de la línea
     public float lineThickness = 0.01f; // Ajusta este valor según lo necesites
