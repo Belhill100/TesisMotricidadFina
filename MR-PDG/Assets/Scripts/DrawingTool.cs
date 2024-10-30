@@ -14,13 +14,13 @@ public class DrawingTool : MonoBehaviour
     public Transform penTip;
 
     // Offset para ajustar la punta del lápiz
-    private Vector3 tipOffset = new Vector3(0, 0, -0.55f);
+    private Vector3 tipOffset = new Vector3(0, 0, -0.14f);
 
     // Distancia mínima entre puntos para registrar un nuevo trazo
     public float minDistance = 0.025f;
 
     // Grosor de la línea
-    public float lineThickness = 0.01f; // Ajusta este valor según lo necesites
+    public float lineThickness = 0.05f; // Ajusta este valor según lo necesites
 
     // Inicializa el LineRenderer
     void Start()
@@ -33,8 +33,8 @@ public class DrawingTool : MonoBehaviour
 
         // Opcional: establecer un material y color para la línea
         lineRenderer.material = new Material(Shader.Find("Sprites/Default"));
-        lineRenderer.startColor = Color.black; // Cambia a cualquier color que desees
-        lineRenderer.endColor = Color.black; // Cambia a cualquier color que desees
+        lineRenderer.startColor = Color.red; // Cambia a cualquier color que desees
+        lineRenderer.endColor = Color.red; // Cambia a cualquier color que desees
     }
 
     // Dibuja en cada actualización del frame
