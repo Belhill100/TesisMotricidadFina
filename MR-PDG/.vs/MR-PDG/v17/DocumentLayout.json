@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\TesisMotricidadFina\\MR-PDG\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{47D66D55-C371-F83C-7BD9-19A28A0CAE21}|Assembly-CSharp.csproj|c:\\tesismotricidadfina\\mr-pdg\\assets\\models\\rope\\ropespawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47D66D55-C371-F83C-7BD9-19A28A0CAE21}|Assembly-CSharp.csproj|solutionrelative:assets\\models\\rope\\ropespawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\TesisMotricidadFina\\MR-PDG\\Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\Lit.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\Lit.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
@@ -47,6 +51,23 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "RopeSpawn.cs",
+              "DocumentMoniker": "C:\\TesisMotricidadFina\\MR-PDG\\Assets\\Models\\Rope\\RopeSpawn.cs",
+              "RelativeDocumentMoniker": "Assets\\Models\\Rope\\RopeSpawn.cs",
+              "ToolTip": "C:\\TesisMotricidadFina\\MR-PDG\\Assets\\Models\\Rope\\RopeSpawn.cs",
+              "RelativeToolTip": "Assets\\Models\\Rope\\RopeSpawn.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T00:47:28.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Lit.shader",
               "DocumentMoniker": "C:\\TesisMotricidadFina\\MR-PDG\\Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\Lit.shader",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\Lit.shader",
@@ -58,12 +79,8 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "OpenXRInteractionFeature.cs",
               "DocumentMoniker": "C:\\TesisMotricidadFina\\MR-PDG\\Library\\PackageCache\\com.unity.xr.openxr@1.11.0\\Runtime\\Features\\OpenXRInteractionFeature.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.xr.openxr@1.11.0\\Runtime\\Features\\OpenXRInteractionFeature.cs",
@@ -71,12 +88,11 @@
               "RelativeToolTip": "Library\\PackageCache\\com.unity.xr.openxr@1.11.0\\Runtime\\Features\\OpenXRInteractionFeature.cs",
               "ViewState": "AQIAAPIAAAAAAAAAAAAYwDEBAAASAQAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T16:29:23.429Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-29T16:29:23.429Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "XRSubsystemHelpers.cs",
               "DocumentMoniker": "C:\\TesisMotricidadFina\\MR-PDG\\Library\\PackageCache\\org.mixedrealitytoolkit.core@91839deb5e8c\\Utilities\\XRSubsystemHelpers.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\org.mixedrealitytoolkit.core@91839deb5e8c\\Utilities\\XRSubsystemHelpers.cs",
@@ -88,7 +104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MRTKLifecycleManager.cs",
               "DocumentMoniker": "C:\\TesisMotricidadFina\\MR-PDG\\Library\\PackageCache\\org.mixedrealitytoolkit.core@91839deb5e8c\\Subsystems\\MRTKLifecycleManager.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\org.mixedrealitytoolkit.core@91839deb5e8c\\Subsystems\\MRTKLifecycleManager.cs",
@@ -100,7 +116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ButtonAction.cs",
               "DocumentMoniker": "C:\\TesisMotricidadFina\\MR-PDG\\Assets\\Scripts\\ButtonAction.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ButtonAction.cs",
@@ -112,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "CondorFollower.cs",
               "DocumentMoniker": "C:\\TesisMotricidadFina\\MR-PDG\\Assets\\Scripts\\CondorFollower.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CondorFollower.cs",
@@ -124,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "DrawingTool.cs",
               "DocumentMoniker": "C:\\TesisMotricidadFina\\MR-PDG\\Assets\\Scripts\\DrawingTool.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DrawingTool.cs",
@@ -136,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "CubeStacker.cs",
               "DocumentMoniker": "C:\\TesisMotricidadFina\\MR-PDG\\Assets\\Scripts\\CubeStacker.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CubeStacker.cs",

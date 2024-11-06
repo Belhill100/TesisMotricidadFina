@@ -9,6 +9,7 @@ TagManager:
   - Dog
   - Cat
   - Titi
+  - Rope
   layers:
   - Default
   - TransparentFX
