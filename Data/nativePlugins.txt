@@ -1,4 +1,0 @@
-libUnityARFoundationMeta.dll
-openxr_loader.dll
-UnityOpenXRHands.dll
-lib_burst_generated.dll
