@@ -1,18 +1,15 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\PDG\\TesisMotricidadFina\\PruebaMR-PDG\\",
+  "WorkspaceRootPath": "C:\\Users\\Isaac Escobar\\Desktop\\PUJ ISAAC\\PDG\\TesisMotricidadFina\\MR-PDG\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B19C7FFE-9D04-6D6A-CF81-6D73A252BCBC}|Assembly-CSharp.csproj|c:\\pdg\\tesismotricidadfina\\pruebamr-pdg\\assets\\changescenario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B19C7FFE-9D04-6D6A-CF81-6D73A252BCBC}|Assembly-CSharp.csproj|solutionrelative:assets\\changescenario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\PDG\\TesisMotricidadFina\\PruebaMR-PDG\\Assets\\ChangeScenario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\PDG\\TesisMotricidadFina\\PruebaMR-PDG\\Assets\\Clicked.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Clicked.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\PDG\\TesisMotricidadFina\\PruebaMR-PDG\\Assets\\Clicked.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\PDG\\TesisMotricidadFina\\PruebaMR-PDG\\Library\\PackageCache\\org.mixedrealitytoolkit.uxcore@f549116c3343\\Button\\PressableButton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\org.mixedrealitytoolkit.uxcore@f549116c3343\\Button\\PressableButton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\PDG\\TesisMotricidadFina\\PruebaMR-PDG\\Library\\PackageCache\\org.mixedrealitytoolkit.uxcore@f549116c3343\\Button\\PressableButton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,22 +26,20 @@
               "DocumentIndex": 0,
               "Title": "ChangeScenario.cs",
               "DocumentMoniker": "C:\\PDG\\TesisMotricidadFina\\PruebaMR-PDG\\Assets\\ChangeScenario.cs",
-              "RelativeDocumentMoniker": "Assets\\ChangeScenario.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\PDG\\TesisMotricidadFina\\PruebaMR-PDG\\Assets\\ChangeScenario.cs",
               "ToolTip": "C:\\PDG\\TesisMotricidadFina\\PruebaMR-PDG\\Assets\\ChangeScenario.cs",
-              "RelativeToolTip": "Assets\\ChangeScenario.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\PDG\\TesisMotricidadFina\\PruebaMR-PDG\\Assets\\ChangeScenario.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T18:15:54.998Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-08T18:15:54.998Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Clicked.cs",
               "DocumentMoniker": "C:\\PDG\\TesisMotricidadFina\\PruebaMR-PDG\\Assets\\Clicked.cs",
-              "RelativeDocumentMoniker": "Assets\\Clicked.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\PDG\\TesisMotricidadFina\\PruebaMR-PDG\\Assets\\Clicked.cs",
               "ToolTip": "C:\\PDG\\TesisMotricidadFina\\PruebaMR-PDG\\Assets\\Clicked.cs",
-              "RelativeToolTip": "Assets\\Clicked.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\PDG\\TesisMotricidadFina\\PruebaMR-PDG\\Assets\\Clicked.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-08T18:08:46.857Z"
             },
@@ -53,9 +48,9 @@
               "DocumentIndex": 2,
               "Title": "PressableButton.cs",
               "DocumentMoniker": "C:\\PDG\\TesisMotricidadFina\\PruebaMR-PDG\\Library\\PackageCache\\org.mixedrealitytoolkit.uxcore@f549116c3343\\Button\\PressableButton.cs",
-              "RelativeDocumentMoniker": "Library\\PackageCache\\org.mixedrealitytoolkit.uxcore@f549116c3343\\Button\\PressableButton.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\PDG\\TesisMotricidadFina\\PruebaMR-PDG\\Library\\PackageCache\\org.mixedrealitytoolkit.uxcore@f549116c3343\\Button\\PressableButton.cs",
               "ToolTip": "C:\\PDG\\TesisMotricidadFina\\PruebaMR-PDG\\Library\\PackageCache\\org.mixedrealitytoolkit.uxcore@f549116c3343\\Button\\PressableButton.cs",
-              "RelativeToolTip": "Library\\PackageCache\\org.mixedrealitytoolkit.uxcore@f549116c3343\\Button\\PressableButton.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\PDG\\TesisMotricidadFina\\PruebaMR-PDG\\Library\\PackageCache\\org.mixedrealitytoolkit.uxcore@f549116c3343\\Button\\PressableButton.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-08T17:46:48.843Z"
