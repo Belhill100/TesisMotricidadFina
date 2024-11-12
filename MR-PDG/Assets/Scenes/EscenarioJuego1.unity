@@ -153,9 +153,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239301815}
   serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 5
+  m_Drag: 5
+  m_AngularDrag: 5
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -169,9 +169,9 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 112
+  m_CollisionDetection: 2
 --- !u!114 &239301817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -374,17 +374,17 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   hostTransform: {fileID: 239301823}
-  allowedManipulations: 7
+  allowedManipulations: -1
   allowedInteractionTypes: -2147483641
   rigidbodyMovementType: 0
-  applyTorque: 1
+  applyTorque: 0
   springForceSoftness: 0.1
   springTorqueSoftness: 0.1
-  springDamping: 1
+  springDamping: 2
   springForceLimit: 100
   rotationAnchorNear: 1
   rotationAnchorFar: 1
-  releaseBehavior: 3
+  releaseBehavior: 0
   transformSmoothingLogicType:
     reference: MixedReality.Toolkit.SpatialManipulation.DefaultTransformSmoothingLogic,
       MixedReality.Toolkit.SpatialManipulation
@@ -423,7 +423,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239301815}
-  m_Material: {fileID: 13400000, guid: 93fd3ce14e8045645a179db0bfce7ea9, type: 2}
+  m_Material: {fileID: 13400000, guid: 84dcb7094039e9d4fa0f74e2210bdf65, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -533,9 +533,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 311395524}
   serializedVersion: 4
-  m_Mass: 0.5
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 5
+  m_Drag: 5
+  m_AngularDrag: 5
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -549,9 +549,9 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 112
+  m_CollisionDetection: 2
 --- !u!114 &311395526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -754,17 +754,17 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   hostTransform: {fileID: 311395532}
-  allowedManipulations: 7
+  allowedManipulations: -1
   allowedInteractionTypes: -2147483641
   rigidbodyMovementType: 0
-  applyTorque: 1
+  applyTorque: 0
   springForceSoftness: 0.1
   springTorqueSoftness: 0.1
-  springDamping: 1
+  springDamping: 2
   springForceLimit: 100
   rotationAnchorNear: 1
   rotationAnchorFar: 1
-  releaseBehavior: 3
+  releaseBehavior: 0
   transformSmoothingLogicType:
     reference: MixedReality.Toolkit.SpatialManipulation.DefaultTransformSmoothingLogic,
       MixedReality.Toolkit.SpatialManipulation
@@ -803,7 +803,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 311395524}
-  m_Material: {fileID: 13400000, guid: 93fd3ce14e8045645a179db0bfce7ea9, type: 2}
+  m_Material: {fileID: 13400000, guid: 84dcb7094039e9d4fa0f74e2210bdf65, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1090,17 +1090,17 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   hostTransform: {fileID: 612526741}
-  allowedManipulations: 7
+  allowedManipulations: -1
   allowedInteractionTypes: -2147483641
   rigidbodyMovementType: 0
-  applyTorque: 1
+  applyTorque: 0
   springForceSoftness: 0.1
   springTorqueSoftness: 0.1
-  springDamping: 1
+  springDamping: 2
   springForceLimit: 100
   rotationAnchorNear: 1
   rotationAnchorFar: 1
-  releaseBehavior: 3
+  releaseBehavior: 0
   transformSmoothingLogicType:
     reference: MixedReality.Toolkit.SpatialManipulation.DefaultTransformSmoothingLogic,
       MixedReality.Toolkit.SpatialManipulation
@@ -1110,7 +1110,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 0}
+  constraintsManager: {fileID: 612526737}
   manipulationLogicTypes:
     moveLogicType:
       reference: MixedReality.Toolkit.SpatialManipulation.MoveLogic, MixedReality.Toolkit.SpatialManipulation
@@ -1139,7 +1139,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 612526735}
-  m_Material: {fileID: 13400000, guid: 93fd3ce14e8045645a179db0bfce7ea9, type: 2}
+  m_Material: {fileID: 13400000, guid: 84dcb7094039e9d4fa0f74e2210bdf65, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1245,8 +1245,8 @@ Rigidbody:
   m_GameObject: {fileID: 612526735}
   serializedVersion: 4
   m_Mass: 5
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Drag: 5
+  m_AngularDrag: 5
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -1260,9 +1260,9 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 112
+  m_CollisionDetection: 2
 --- !u!114 &612526744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2116,9 +2116,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1341143641}
   serializedVersion: 4
-  m_Mass: 2
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 5
+  m_Drag: 5
+  m_AngularDrag: 5
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -2132,9 +2132,9 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 112
+  m_CollisionDetection: 2
 --- !u!114 &1341143643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2337,17 +2337,17 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   hostTransform: {fileID: 1341143649}
-  allowedManipulations: 7
+  allowedManipulations: -1
   allowedInteractionTypes: -2147483641
   rigidbodyMovementType: 0
-  applyTorque: 1
+  applyTorque: 0
   springForceSoftness: 0.1
   springTorqueSoftness: 0.1
-  springDamping: 1
+  springDamping: 2
   springForceLimit: 100
   rotationAnchorNear: 1
   rotationAnchorFar: 1
-  releaseBehavior: 3
+  releaseBehavior: 0
   transformSmoothingLogicType:
     reference: MixedReality.Toolkit.SpatialManipulation.DefaultTransformSmoothingLogic,
       MixedReality.Toolkit.SpatialManipulation
@@ -2386,7 +2386,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1341143641}
-  m_Material: {fileID: 13400000, guid: 93fd3ce14e8045645a179db0bfce7ea9, type: 2}
+  m_Material: {fileID: 13400000, guid: 84dcb7094039e9d4fa0f74e2210bdf65, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -2496,9 +2496,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1362909546}
   serializedVersion: 4
-  m_Mass: 0.1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 5
+  m_Drag: 5
+  m_AngularDrag: 5
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -2512,9 +2512,9 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 112
+  m_CollisionDetection: 2
 --- !u!114 &1362909548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2717,17 +2717,17 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   hostTransform: {fileID: 1362909554}
-  allowedManipulations: 7
+  allowedManipulations: -1
   allowedInteractionTypes: -2147483641
   rigidbodyMovementType: 0
-  applyTorque: 1
+  applyTorque: 0
   springForceSoftness: 0.1
   springTorqueSoftness: 0.1
-  springDamping: 1
+  springDamping: 2
   springForceLimit: 100
   rotationAnchorNear: 1
   rotationAnchorFar: 1
-  releaseBehavior: 3
+  releaseBehavior: 0
   transformSmoothingLogicType:
     reference: MixedReality.Toolkit.SpatialManipulation.DefaultTransformSmoothingLogic,
       MixedReality.Toolkit.SpatialManipulation
@@ -2766,7 +2766,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1362909546}
-  m_Material: {fileID: 13400000, guid: 93fd3ce14e8045645a179db0bfce7ea9, type: 2}
+  m_Material: {fileID: 13400000, guid: 84dcb7094039e9d4fa0f74e2210bdf65, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
