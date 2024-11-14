@@ -62,9 +62,11 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\DrawingTool.cs" />
     <Compile Include="Assets\Scripts\CubeStacker.cs" />
+    <Compile Include="Assets\Scripts\HandInteractionController.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\XRPokeFollowAffordanceFill.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\FadePlaneMaterial.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\BooleanToggleVisualsController.cs" />
+    <Compile Include="Assets\Scripts\CubeLockOnRelease.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\GoalManager.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\GazeTooltips.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\ZoneScale.cs" />

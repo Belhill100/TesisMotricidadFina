@@ -138,6 +138,7 @@ GameObject:
   - component: {fileID: 239301818}
   - component: {fileID: 239301817}
   - component: {fileID: 239301816}
+  - component: {fileID: 239301824}
   m_Layer: 0
   m_Name: DogCube
   m_TagString: Dog
@@ -502,6 +503,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &239301824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239301815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d24a20aca389684d9e2165bc2a42a53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &311395524
 GameObject:
   m_ObjectHideFlags: 0
@@ -518,6 +531,7 @@ GameObject:
   - component: {fileID: 311395527}
   - component: {fileID: 311395526}
   - component: {fileID: 311395525}
+  - component: {fileID: 311395533}
   m_Layer: 0
   m_Name: CatCube
   m_TagString: Cat
@@ -882,6 +896,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &311395533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311395524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d24a20aca389684d9e2165bc2a42a53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &612526735
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,6 +925,7 @@ GameObject:
   - component: {fileID: 612526742}
   - component: {fileID: 612526743}
   - component: {fileID: 612526744}
+  - component: {fileID: 612526745}
   m_Layer: 0
   m_Name: ElephantCube
   m_TagString: Elephant
@@ -1277,6 +1304,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   scoreText: {fileID: 0}
+--- !u!114 &612526745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612526735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d24a20aca389684d9e2165bc2a42a53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &755725428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1564,6 +1603,14 @@ PrefabInstance:
       propertyPath: m_RequestedTrackingOriginMode
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4160709927669568829, guid: 4d7e2f87fefe0ba468719b15288b46e7, type: 3}
+      propertyPath: m_ActionAssets.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4160709927669568829, guid: 4d7e2f87fefe0ba468719b15288b46e7, type: 3}
+      propertyPath: m_ActionAssets.Array.data[1]
+      value: 
+      objectReference: {fileID: -944628639613478452, guid: 18c412191cdc9274897f101c7fd5316f, type: 3}
     - target: {fileID: 8085333164323593313, guid: 4d7e2f87fefe0ba468719b15288b46e7, type: 3}
       propertyPath: m_InteractionManager
       value: 
@@ -1576,6 +1623,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2351505567455720334, guid: 4d7e2f87fefe0ba468719b15288b46e7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 974032186}
+    - targetCorrespondingSourceObject: {fileID: 2351505567455720334, guid: 4d7e2f87fefe0ba468719b15288b46e7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 974032187}
     - targetCorrespondingSourceObject: {fileID: 2351505566903569413, guid: 4d7e2f87fefe0ba468719b15288b46e7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 974032184}
@@ -1623,6 +1673,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61874c53dfa4b00419f61d91065c6768, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &974032187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974032185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 735c49679eb62aa4e93db53e458679f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pinchAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Pinch
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 6b61877d-b690-4ad8-989b-dde085ac3605
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
 --- !u!1 &995681587 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2351505566771328562, guid: 4d7e2f87fefe0ba468719b15288b46e7, type: 3}
@@ -2101,6 +2175,7 @@ GameObject:
   - component: {fileID: 1341143644}
   - component: {fileID: 1341143643}
   - component: {fileID: 1341143642}
+  - component: {fileID: 1341143650}
   m_Layer: 0
   m_Name: TigerCube
   m_TagString: Tiger
@@ -2465,6 +2540,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1341143650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341143641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d24a20aca389684d9e2165bc2a42a53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1362909546
 GameObject:
   m_ObjectHideFlags: 0
@@ -2481,6 +2568,7 @@ GameObject:
   - component: {fileID: 1362909549}
   - component: {fileID: 1362909548}
   - component: {fileID: 1362909547}
+  - component: {fileID: 1362909555}
   m_Layer: 0
   m_Name: TitiCube
   m_TagString: Titi
@@ -2845,6 +2933,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1362909555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362909546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d24a20aca389684d9e2165bc2a42a53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1603752894
 GameObject:
   m_ObjectHideFlags: 0

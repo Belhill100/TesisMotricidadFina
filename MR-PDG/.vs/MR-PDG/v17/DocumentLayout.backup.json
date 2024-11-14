@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\Isaac Escobar\\Desktop\\PUJ ISAAC\\PDG\\TesisMotricidadFina\\MR-PDG\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{47D66D55-C371-F83C-7BD9-19A28A0CAE21}|Assembly-CSharp.csproj|c:\\users\\isaac escobar\\desktop\\puj isaac\\pdg\\tesismotricidadfina\\mr-pdg\\assets\\scripts\\handinteractioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47D66D55-C371-F83C-7BD9-19A28A0CAE21}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\handinteractioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47D66D55-C371-F83C-7BD9-19A28A0CAE21}|Assembly-CSharp.csproj|C:\\Users\\Isaac Escobar\\Desktop\\PUJ ISAAC\\PDG\\TesisMotricidadFina\\MR-PDG\\assets\\scripts\\cubelockonrelease.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47D66D55-C371-F83C-7BD9-19A28A0CAE21}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cubelockonrelease.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47D66D55-C371-F83C-7BD9-19A28A0CAE21}|Assembly-CSharp.csproj|C:\\Users\\Isaac Escobar\\Desktop\\PUJ ISAAC\\PDG\\TesisMotricidadFina\\MR-PDG\\assets\\scripts\\cubestacker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47D66D55-C371-F83C-7BD9-19A28A0CAE21}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cubestacker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Isaac Escobar\\Desktop\\PUJ ISAAC\\PDG\\TesisMotricidadFina\\MR-PDG\\Library\\PackageCache\\com.microsoft.mixedreality.toolkit.foundation@f2323a9b7aec\\SDK\\Experimental\\NonNativeKeyboard\\Scripts\\CapsLockHighlight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.microsoft.mixedreality.toolkit.foundation@f2323a9b7aec\\SDK\\Experimental\\NonNativeKeyboard\\Scripts\\CapsLockHighlight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,6 +35,43 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "HandInteractionController.cs",
+              "DocumentMoniker": "C:\\Users\\Isaac Escobar\\Desktop\\PUJ ISAAC\\PDG\\TesisMotricidadFina\\MR-PDG\\Assets\\Scripts\\HandInteractionController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HandInteractionController.cs",
+              "ToolTip": "C:\\Users\\Isaac Escobar\\Desktop\\PUJ ISAAC\\PDG\\TesisMotricidadFina\\MR-PDG\\Assets\\Scripts\\HandInteractionController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HandInteractionController.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAowDoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T13:25:10.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CubeLockOnRelease.cs",
+              "DocumentMoniker": "C:\\Users\\Isaac Escobar\\Desktop\\PUJ ISAAC\\PDG\\TesisMotricidadFina\\MR-PDG\\Assets\\Scripts\\CubeLockOnRelease.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CubeLockOnRelease.cs",
+              "ToolTip": "C:\\Users\\Isaac Escobar\\Desktop\\PUJ ISAAC\\PDG\\TesisMotricidadFina\\MR-PDG\\Assets\\Scripts\\CubeLockOnRelease.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CubeLockOnRelease.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAQwEUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T13:13:52.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CubeStacker.cs",
+              "DocumentMoniker": "C:\\Users\\Isaac Escobar\\Desktop\\PUJ ISAAC\\PDG\\TesisMotricidadFina\\MR-PDG\\Assets\\Scripts\\CubeStacker.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CubeStacker.cs",
+              "ToolTip": "C:\\Users\\Isaac Escobar\\Desktop\\PUJ ISAAC\\PDG\\TesisMotricidadFina\\MR-PDG\\Assets\\Scripts\\CubeStacker.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CubeStacker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T20:21:59.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "CapsLockHighlight.cs",
               "DocumentMoniker": "C:\\Users\\Isaac Escobar\\Desktop\\PUJ ISAAC\\PDG\\TesisMotricidadFina\\MR-PDG\\Library\\PackageCache\\com.microsoft.mixedreality.toolkit.foundation@f2323a9b7aec\\SDK\\Experimental\\NonNativeKeyboard\\Scripts\\CapsLockHighlight.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.microsoft.mixedreality.toolkit.foundation@f2323a9b7aec\\SDK\\Experimental\\NonNativeKeyboard\\Scripts\\CapsLockHighlight.cs",
@@ -33,7 +82,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "SpatialAwarenessSystemManager.cs",
               "DocumentMoniker": "C:\\Users\\Isaac Escobar\\Desktop\\PUJ ISAAC\\PDG\\TesisMotricidadFina\\MR-PDG\\Library\\PackageCache\\com.microsoft.mixedreality.toolkit.foundation@f2323a9b7aec\\SDK\\Experimental\\ServiceManagers\\SpatialAwareness\\Scripts\\SpatialAwarenessSystemManager.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.microsoft.mixedreality.toolkit.foundation@f2323a9b7aec\\SDK\\Experimental\\ServiceManagers\\SpatialAwareness\\Scripts\\SpatialAwarenessSystemManager.cs",
