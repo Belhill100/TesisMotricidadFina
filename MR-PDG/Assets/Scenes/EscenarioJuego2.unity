@@ -495,7 +495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   penTip: {fileID: 563251233}
   minDistance: 0.025
-  lineThickness: 0.01
+  lineThickness: 0.001
 --- !u!120 &563251239
 LineRenderer:
   serializedVersion: 2
@@ -548,7 +548,7 @@ LineRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.44160566
+        time: 0
         value: 1
         inSlope: 0
         outSlope: 0
@@ -2052,7 +2052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c37260318b59b0419256b8cc902efa8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 1.5
 --- !u!1001 &1931245606
 PrefabInstance:
   m_ObjectHideFlags: 0
