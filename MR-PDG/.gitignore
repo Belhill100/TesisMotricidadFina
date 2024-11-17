@@ -13,7 +13,7 @@ MR-PDG/Logs/
 [Bb]uilds/
 [Ll]ogs/
 [Mm]emoryCaptures/
-Assets/AssetStoreTools*
+#Assets/AssetStoreTools*
 
 # Archivos generados por Unity
 *.csproj
@@ -49,7 +49,7 @@ Terrain/
 # Configuración de dependencias externas (Opcional)
 *.unitypackage
 *.bak
-*.meta
+#*.meta
 
 # Archivos específicos de plataformas
 *.apk

@@ -49,7 +49,7 @@ Terrain/
 # Configuración de dependencias externas (Opcional)
 *.unitypackage
 *.bak
-*.meta
+#*.meta
 
 # Archivos específicos de plataformas
 *.apk
