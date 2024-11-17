@@ -11,23 +11,20 @@ public class ChangeScenario : MonoBehaviour
     }
     public void changeScenarioGame1()
     {
-        //transform.position = transform.position - new Vector3(60f,0f,0f);
         SceneManager.LoadScene("EscenarioJuego1");
     }
     public void changeScenarioGame2()
     {
-        //transform.position = transform.position - new Vector3(60f,0f,0f);
         SceneManager.LoadScene("EscenarioJuego2");
     }
     public void changeScenarioGame3()
     {
-        //transform.position = transform.position - new Vector3(60f,0f,0f);
         SceneManager.LoadScene("EscenarioJuego3");
     }
-    public void changeScenarioGame4()
+    public void closeGame()
     {
-        //transform.position = transform.position - new Vector3(60f,0f,0f);
-        SceneManager.LoadScene("EscenarioJuego4");
+        Debug.Log("Saliendo del juego...");
+        Application.Quit();
     }
     // Start is called before the first frame update
     void Start()

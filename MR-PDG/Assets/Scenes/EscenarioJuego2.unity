@@ -493,6 +493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 505ab773858b0ad44aa72d8447a7e7a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lineRenderer: {fileID: 0}
   penTip: {fileID: 563251233}
   minDistance: 0.025
   lineThickness: 0.001
@@ -1012,15 +1013,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 549e87c5a868af84eb47f6a36e71037d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.5219975
+      value: 4.5093
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 549e87c5a868af84eb47f6a36e71037d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.281
+      value: 1.2882
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 549e87c5a868af84eb47f6a36e71037d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.7680016
+      value: -6.6418
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 549e87c5a868af84eb47f6a36e71037d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1102,7 +1103,7 @@ Transform:
   m_GameObject: {fileID: 909262179}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.7300014, y: 7.082, z: -3.1099815}
+  m_LocalPosition: {x: 4.5093, y: -0.43, z: -3.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1781,9 +1782,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1922220768106560367, guid: c6b351a67ceb69140b199996bbbea156, type: 3}
       propertyPath: m_text
-      value: '<size=8>Opcion2</size><size=6>
+      value: '<size=12>Invocar Condor</size><size=6>
 
-        <alpha=#88>Invocar Condor</size>'
+        <alpha=#88></size>'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1922220768106560367, guid: c6b351a67ceb69140b199996bbbea156, type: 3}
+      propertyPath: m_margin.x
+      value: -3.701088
+      objectReference: {fileID: 0}
+    - target: {fileID: 1922220768106560367, guid: c6b351a67ceb69140b199996bbbea156, type: 3}
+      propertyPath: m_margin.z
+      value: -7.186817
       objectReference: {fileID: 0}
     - target: {fileID: 1922220768106560367, guid: c6b351a67ceb69140b199996bbbea156, type: 3}
       propertyPath: m_HorizontalAlignment
@@ -2052,7 +2061,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c37260318b59b0419256b8cc902efa8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
+  speed: 1
+  disappearDelay: 5
 --- !u!1001 &1931245606
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2075,15 +2085,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 90397009d3512e54d94f3826e8367ea0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.319998
+      value: 4.5093
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 90397009d3512e54d94f3826e8367ea0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.6406374
+      value: -0.43
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 90397009d3512e54d94f3826e8367ea0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.8310204
+      value: -3.57
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 90397009d3512e54d94f3826e8367ea0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2201,7 +2211,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 3940a7658692e0047aac8452e250f1d7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
