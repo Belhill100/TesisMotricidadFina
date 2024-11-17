@@ -1,3 +1,5 @@
 Build/
 Library/
-.vs/PruebaMR-PDG/v17/Browse.VC.db
+.vs/
+Temp/
+Logs/
