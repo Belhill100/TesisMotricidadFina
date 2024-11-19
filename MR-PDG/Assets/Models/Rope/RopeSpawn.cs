@@ -17,6 +17,12 @@ public class RopeSpawn : MonoBehaviour
     [SerializeField]
     bool reset, spawn, snapFirst, snapLast;
 
+    void Start()
+    {
+        // Llama a Spawn para generar la cuerda al inicio
+        Spawn();
+    }
+
     // Update is called once per frame
     void Update()
     {
