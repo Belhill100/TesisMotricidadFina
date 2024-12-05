@@ -9,7 +9,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{47D66D55-C371-F83C-7BD9-19A28A0CAE21}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -67,6 +68,7 @@
     <Compile Include="Assets\MRTemplateAssets\Scripts\BooleanToggleVisualsController.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\GoalManager.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\GazeTooltips.cs" />
+    <Compile Include="Assets\Scripts\CondorGameManager.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\ZoneScale.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\PinchVizController.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\LaunchProjectile.cs" />
@@ -76,8 +78,8 @@
     <Compile Include="Assets\Scripts\CondorFollower.cs" />
     <Compile Include="Assets\Models\Rope\RopeSpawn.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\TurnToFace.cs" />
-    <Compile Include="Assets\Scripts\ButtonAction.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\VideoTimeScrubControl.cs" />
+    <Compile Include="Assets\Scripts\CameraFollower.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\VideoPlayerRenderTexture.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\PlaneTrackingModeVisualizer.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\SpawnedObjectsManager.cs" />
