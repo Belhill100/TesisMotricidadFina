@@ -61,7 +61,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\DrawingTool.cs" />
-    <Compile Include="Assets\Scripts\CubeStacker.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\XRPokeFollowAffordanceFill.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\FadePlaneMaterial.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\BooleanToggleVisualsController.cs" />
@@ -79,6 +78,7 @@
     <Compile Include="Assets\MRTemplateAssets\Scripts\TurnToFace.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\VideoTimeScrubControl.cs" />
     <Compile Include="Assets\Scripts\CameraFollower.cs" />
+    <Compile Include="Assets\Scripts\CubeMatcher.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\VideoPlayerRenderTexture.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\PlaneTrackingModeVisualizer.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\SpawnedObjectsManager.cs" />

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro; // Importar TextMeshPro
+using TMPro;
 
 public class CondorGameManager : MonoBehaviour
 {
@@ -11,21 +11,20 @@ public class CondorGameManager : MonoBehaviour
     public Canvas gameCanvas; // El canvas principal con el botón para jugar
 
     [Header("Settings")]
-    public float countdownTime = 5f; // Tiempo del contador antes de empezar
-    public float drawTime = 30f; // Tiempo permitido para dibujar
+    public float countdownTime = 2f; // Tiempo del contador antes de empezar
+    public float drawTime = 10f; // Tiempo permitido para dibujar
     public float cleanupDelay = 5f; // Tiempo antes de borrar el trazo tras finalizar
     public float condorSpeed = 5f; // Velocidad del cóndor al seguir el trazo
-    public TextMeshPro countdownText; // Texto TextMeshPro para mostrar el contador (3D Object)
+    public TMP_Text countdownText; // Texto para mostrar el contador
 
     [Header("Custom Rotations")]
-    public Quaternion condorRotation = Quaternion.identity; // Rotación personalizada para el cóndor
     public Quaternion pencilRotation = Quaternion.identity; // Rotación personalizada para el lápiz
 
     [Header("Pencil Settings")]
     public DrawingTool drawingTool; // Script de dibujo para el lápiz
 
     private bool isGameStarted = false;
-    private bool isCondorFollowing = false; // Indica si el cóndor está siguiendo el trazo
+    private bool isCondorFlying = false; // Estado del vuelo del cóndor
     private float currentDrawTime;
 
     void Start()
@@ -78,7 +77,7 @@ public class CondorGameManager : MonoBehaviour
         {
             if (countdownText != null)
             {
-                countdownText.text = $"Comienza en: {Mathf.CeilToInt(currentTime)}";
+                countdownText.text = $"Tiempo: {Mathf.CeilToInt(currentTime)}";
             }
             currentTime -= Time.deltaTime;
             yield return null;
@@ -86,7 +85,7 @@ public class CondorGameManager : MonoBehaviour
 
         // Iniciar tiempo de dibujo
         currentDrawTime = drawTime;
-        PositionAndActivateObjects();
+        PositionAndActivatePencil();
 
         while (currentDrawTime > 0)
         {
@@ -98,36 +97,27 @@ public class CondorGameManager : MonoBehaviour
             yield return null;
         }
 
-        // Iniciar el seguimiento del cóndor
-        FollowDrawingPath();
+        // Mostrar el cóndor y comenzar su vuelo
+        condor.SetActive(true);
+        yield return FollowDrawingPath();
 
-        // Esperar hasta que el cóndor termine su recorrido
-        yield return new WaitUntil(() => !isCondorFollowing);
-
-        // Borrar el trazo y reiniciar
+        // Esperar a que el cóndor termine el recorrido y borrar el trazo
         yield return new WaitForSeconds(cleanupDelay);
         CleanupAndReset();
     }
 
-    private void PositionAndActivateObjects()
+    private void PositionAndActivatePencil()
     {
-        // Posicionar y activar los objetos frente a la cámara
+        // Posicionar y activar el lápiz frente a la cámara
         Transform cameraTransform = Camera.main.transform;
 
-        // Posicionar el lápiz
         Vector3 pencilPosition = cameraTransform.position + cameraTransform.forward * 1f;
         pencil.transform.position = pencilPosition;
         pencil.transform.rotation = pencilRotation;
         pencil.SetActive(true);
-
-        // Posicionar el cóndor
-        Vector3 condorOffset = cameraTransform.right * 0.5f; // Separación lateral
-        condor.transform.position = pencilPosition + condorOffset;
-        condor.transform.rotation = condorRotation;
-        condor.SetActive(true);
     }
 
-    private void FollowDrawingPath()
+    private IEnumerator FollowDrawingPath()
     {
         // Obtener los puntos del trazo
         List<Vector3> drawnPath = drawingTool.GetPoints();
@@ -135,12 +125,14 @@ public class CondorGameManager : MonoBehaviour
         // Asegurarse de que hay un trazo válido
         if (drawnPath.Count > 0)
         {
-            isCondorFollowing = true;
-            StartCoroutine(MoveCondorAlongPath(drawnPath));
+            isCondorFlying = true; // Indicar que el cóndor está volando
+            yield return MoveCondorAlongPath(drawnPath);
+            isCondorFlying = false; // El cóndor terminó de volar
         }
         else
         {
             Debug.LogWarning("No se dibujó ningún trazo.");
+            condor.SetActive(false); // Ocultar el cóndor si no hay trazo
         }
     }
 
@@ -159,11 +151,18 @@ public class CondorGameManager : MonoBehaviour
             currentPointIndex++;
         }
 
-        isCondorFollowing = false; // Indicar que el cóndor terminó el recorrido
+        Debug.Log("El cóndor completó el recorrido.");
     }
 
     private void CleanupAndReset()
     {
+        // Verificar si el cóndor todavía está volando
+        if (isCondorFlying)
+        {
+            Debug.LogWarning("El cóndor sigue volando. Esperando a que termine...");
+            return; // No limpiar hasta que el cóndor termine
+        }
+
         // Ocultar el lápiz y el cóndor
         condor.SetActive(false);
         pencil.SetActive(false);
@@ -171,14 +170,13 @@ public class CondorGameManager : MonoBehaviour
         // Borrar el trazo
         drawingTool.ClearDrawing();
 
-        // Reiniciar el canvas y el texto
+        // Reiniciar el canvas y el contador
         if (gameCanvas != null)
         {
             gameCanvas.gameObject.SetActive(true);
         }
         if (countdownText != null)
         {
-            countdownText.text = "";
             countdownText.gameObject.SetActive(false);
         }
 
