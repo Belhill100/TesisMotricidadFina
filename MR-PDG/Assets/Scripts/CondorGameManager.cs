@@ -1,51 +1,55 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class CondorGameManager : MonoBehaviour
 {
     [Header("Game Objects")]
-    public GameObject condor; // El objeto del cóndor
-    public GameObject pencil; // El objeto del lápiz
-    public Canvas gameCanvas; // El canvas principal con el botón para jugar
+    public GameObject condor; // Objeto del cóndor
+    public GameObject pencil; // Objeto del lápiz
+    public Canvas gameCanvas; // Canvas con el botón para jugar
 
     [Header("Settings")]
     public float countdownTime = 2f; // Tiempo del contador antes de empezar
     public float drawTime = 10f; // Tiempo permitido para dibujar
     public float cleanupDelay = 5f; // Tiempo antes de borrar el trazo tras finalizar
-    public float condorSpeed = 5f; // Velocidad del cóndor al seguir el trazo
-    public TMP_Text countdownText; // Texto para mostrar el contador
+    public float condorSpeed = 5f; // Velocidad del cóndor
 
-    [Header("Custom Rotations")]
-    public Quaternion pencilRotation = Quaternion.identity; // Rotación personalizada para el lápiz
+    [Header("UI")]
+    public TextMeshPro countdownText; // Texto para el contador
+
+    [Header("Condor Animation & Sound")]
+    public Animator condorAnimator; // Componente Animator del cóndor
+    public AudioSource condorSound; // Sonido del cóndor mientras vuela
 
     [Header("Pencil Settings")]
-    public DrawingTool drawingTool; // Script de dibujo para el lápiz
+    public DrawingTool drawingTool; // Script del lápiz para el trazo
 
     private bool isGameStarted = false;
-    private bool isCondorFlying = false; // Estado del vuelo del cóndor
     private float currentDrawTime;
+    private bool condorFlying = false;
 
     void Start()
     {
-        // Desactivar el lápiz y el cóndor al inicio
+        // Desactivar condor y lápiz al inicio
         condor.SetActive(false);
         pencil.SetActive(false);
 
-        // Asegurarse de que el texto del contador esté desactivado
+        // Ocultar contador de tiempo
         if (countdownText != null)
         {
             countdownText.gameObject.SetActive(false);
         }
 
-        // Buscar automáticamente el objeto que contiene el DrawingTool si no está asignado
+        // Buscar automáticamente el DrawingTool si no está asignado
         if (drawingTool == null)
         {
             drawingTool = FindObjectOfType<DrawingTool>();
             if (drawingTool == null)
             {
-                Debug.LogError("No se encontró un objeto con el script DrawingTool en la escena.");
+                Debug.LogError("No se encontró un objeto con el script DrawingTool.");
             }
         }
     }
@@ -61,7 +65,7 @@ public class CondorGameManager : MonoBehaviour
 
     private IEnumerator GameSequence()
     {
-        // Ocultar el canvas y mostrar el contador
+        // Ocultar menú y mostrar contador
         if (gameCanvas != null)
         {
             gameCanvas.gameObject.SetActive(false);
@@ -71,68 +75,76 @@ public class CondorGameManager : MonoBehaviour
             countdownText.gameObject.SetActive(true);
         }
 
-        // Contador regresivo antes de iniciar
+        // Contador antes de empezar
         float currentTime = countdownTime;
         while (currentTime > 0)
         {
-            if (countdownText != null)
-            {
-                countdownText.text = $"Tiempo: {Mathf.CeilToInt(currentTime)}";
-            }
+            countdownText.text = $"Comienza en: {Mathf.CeilToInt(currentTime)}";
             currentTime -= Time.deltaTime;
             yield return null;
         }
 
         // Iniciar tiempo de dibujo
         currentDrawTime = drawTime;
-        PositionAndActivatePencil();
-
+        pencil.SetActive(true);
         while (currentDrawTime > 0)
         {
-            if (countdownText != null)
-            {
-                countdownText.text = $"Tiempo: {Mathf.CeilToInt(currentDrawTime)}";
-            }
+            countdownText.text = $"Tiempo: {Mathf.CeilToInt(currentDrawTime)}";
             currentDrawTime -= Time.deltaTime;
             yield return null;
         }
 
-        // Mostrar el cóndor y comenzar su vuelo
-        condor.SetActive(true);
-        yield return FollowDrawingPath();
+        // Iniciar el vuelo del cóndor
+        yield return StartCoroutine(StartCondorFlight());
 
-        // Esperar a que el cóndor termine el recorrido y borrar el trazo
+        // Esperar cleanupDelay antes de reiniciar
         yield return new WaitForSeconds(cleanupDelay);
+
+        // Reiniciar juego
         CleanupAndReset();
     }
 
-    private void PositionAndActivatePencil()
+    private IEnumerator StartCondorFlight()
     {
-        // Posicionar y activar el lápiz frente a la cámara
-        Transform cameraTransform = Camera.main.transform;
-
-        Vector3 pencilPosition = cameraTransform.position + cameraTransform.forward * 1f;
-        pencil.transform.position = pencilPosition;
-        pencil.transform.rotation = pencilRotation;
-        pencil.SetActive(true);
-    }
-
-    private IEnumerator FollowDrawingPath()
-    {
-        // Obtener los puntos del trazo
         List<Vector3> drawnPath = drawingTool.GetPoints();
-
-        // Asegurarse de que hay un trazo válido
         if (drawnPath.Count > 0)
         {
-            isCondorFlying = true; // Indicar que el cóndor está volando
-            yield return MoveCondorAlongPath(drawnPath);
-            isCondorFlying = false; // El cóndor terminó de volar
+            condor.SetActive(true);
+            condorFlying = true;
+
+            // Activar animación
+            if (condorAnimator != null)
+            {
+                condorAnimator.SetBool("isFlying", true);
+            }
+
+            // Activar sonido y hacer que se repita
+            if (condorSound != null)
+            {
+                condorSound.loop = true; // Hace que el sonido se repita automáticamente
+                condorSound.Play();
+            }
+
+            // Mover el cóndor a lo largo del trazo
+            yield return StartCoroutine(MoveCondorAlongPath(drawnPath));
+
+            // Cuando termine el trazo, detener animación y sonido
+            condorFlying = false;
+            if (condorAnimator != null)
+            {
+                condorAnimator.SetBool("isFlying", false);
+            }
+            if (condorSound != null)
+            {
+                condorSound.loop = false; // Desactivar el loop
+                condorSound.Stop(); // Detener el sonido
+            }
+
+            Debug.Log("El cóndor completó el recorrido.");
         }
         else
         {
             Debug.LogWarning("No se dibujó ningún trazo.");
-            condor.SetActive(false); // Ocultar el cóndor si no hay trazo
         }
     }
 
@@ -150,27 +162,18 @@ public class CondorGameManager : MonoBehaviour
             }
             currentPointIndex++;
         }
-
-        Debug.Log("El cóndor completó el recorrido.");
     }
 
     private void CleanupAndReset()
     {
-        // Verificar si el cóndor todavía está volando
-        if (isCondorFlying)
-        {
-            Debug.LogWarning("El cóndor sigue volando. Esperando a que termine...");
-            return; // No limpiar hasta que el cóndor termine
-        }
-
-        // Ocultar el lápiz y el cóndor
+        // Ocultar el cóndor y el lápiz
         condor.SetActive(false);
         pencil.SetActive(false);
 
         // Borrar el trazo
         drawingTool.ClearDrawing();
 
-        // Reiniciar el canvas y el contador
+        // Mostrar el menú de nuevo
         if (gameCanvas != null)
         {
             gameCanvas.gameObject.SetActive(true);
