@@ -73,11 +73,11 @@
     <Compile Include="Assets\MRTemplateAssets\Scripts\PositionAtStart.cs" />
     <Compile Include="Assets\Scripts\ChangeScenario.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\FadeMaterial.cs" />
+    <Compile Include="Assets\Scripts\CanvasManager.cs" />
     <Compile Include="Assets\Scripts\CondorFollower.cs" />
     <Compile Include="Assets\Models\Rope\RopeSpawn.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\TurnToFace.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\VideoTimeScrubControl.cs" />
-    <Compile Include="Assets\Scripts\CameraFollower.cs" />
     <Compile Include="Assets\Scripts\CubeMatcher.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\VideoPlayerRenderTexture.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\PlaneTrackingModeVisualizer.cs" />

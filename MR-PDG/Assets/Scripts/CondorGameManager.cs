@@ -10,6 +10,7 @@ public class CondorGameManager : MonoBehaviour
     public GameObject condor; // Objeto del cóndor
     public GameObject pencil; // Objeto del lápiz
     public Canvas gameCanvas; // Canvas con el botón para jugar
+    public Canvas restartCanvas; // Canvas con el botón para reiniciar
 
     [Header("Settings")]
     public float countdownTime = 2f; // Tiempo del contador antes de empezar
@@ -69,6 +70,7 @@ public class CondorGameManager : MonoBehaviour
         if (gameCanvas != null)
         {
             gameCanvas.gameObject.SetActive(false);
+            restartCanvas.gameObject.SetActive(false);
         }
         if (countdownText != null)
         {
@@ -94,6 +96,9 @@ public class CondorGameManager : MonoBehaviour
             yield return null;
         }
 
+        // Congelar el lápiz
+        FreezePencil();
+
         // Iniciar el vuelo del cóndor
         yield return StartCoroutine(StartCondorFlight());
 
@@ -102,6 +107,24 @@ public class CondorGameManager : MonoBehaviour
 
         // Reiniciar juego
         CleanupAndReset();
+    }
+
+    private void FreezePencil()
+    {
+        // Desactivar cualquier script de movimiento en el lápiz
+        if (pencil.GetComponent<Rigidbody>() != null)
+        {
+            pencil.GetComponent<Rigidbody>().isKinematic = true; // Lo deja fijo
+        }
+
+        // Desactivar cualquier script en el lápiz
+        MonoBehaviour[] scripts = pencil.GetComponents<MonoBehaviour>();
+        foreach (MonoBehaviour script in scripts)
+        {
+            script.enabled = false;
+        }
+
+        Debug.Log("Lápiz congelado.");
     }
 
     private IEnumerator StartCondorFlight()
@@ -170,6 +193,17 @@ public class CondorGameManager : MonoBehaviour
         condor.SetActive(false);
         pencil.SetActive(false);
 
+        // Restaurar el lápiz para que pueda moverse nuevamente
+        if (pencil.GetComponent<Rigidbody>() != null)
+        {
+            pencil.GetComponent<Rigidbody>().isKinematic = false;
+        }
+        MonoBehaviour[] scripts = pencil.GetComponents<MonoBehaviour>();
+        foreach (MonoBehaviour script in scripts)
+        {
+            script.enabled = true;
+        }
+
         // Borrar el trazo
         drawingTool.ClearDrawing();
 
@@ -177,6 +211,7 @@ public class CondorGameManager : MonoBehaviour
         if (gameCanvas != null)
         {
             gameCanvas.gameObject.SetActive(true);
+            restartCanvas.gameObject.SetActive(true);
         }
         if (countdownText != null)
         {
